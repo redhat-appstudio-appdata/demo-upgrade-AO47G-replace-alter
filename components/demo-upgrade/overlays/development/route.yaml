@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: demo-upgrade
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: demo-upgrade
+    app.kubernetes.io/part-of: demo-upgrade
+  name: demo-upgradei8th
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: demo-upgrade
+    weight: null
+status: {}
