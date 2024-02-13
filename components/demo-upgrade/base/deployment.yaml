@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: demo-upgrade
   name: demo-upgrade
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
